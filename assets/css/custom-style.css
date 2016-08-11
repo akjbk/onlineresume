@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding-top: 50px;
+    height: 150px;
+    background-color: white;
+    border-bottom: 2px solid gold;
+}
+#header-wrapper{
+    bottom-top: 3px solid black;
+    bottom-bottom: 3px solid black;
+}
+#header-wrapper::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+#logo{
+    float: left;
+    font-size: 30px;
+}
+#logo > a{
+    color: #b92c28;
+    text-decoration: none;
+    margin-left: 50px;
+}
+nav{
+    float: right;
+}
+nav > ul{
+    list-style:none;
+}
+nav > ul > li{
+    float: left;
+}
+nav > ul > li > a{
+    display: block;
+    width: 130px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    line-height: 1.6;
+
+}
+nav > ul > li > a:hover{
+    color: #b92c28;
+    text-decoration: none;
+}
+
+@media (max-width:780px){
+    nav > ul
+    {
+        display: none;
+    }
+    nav{
+        font-size: 30px;
+        width: 100px;
+        line-height: 1.6;
+    }
+    nav:hover ul{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        background:rgba(0, 0, 0, 0.1);
+        width: 200px;
+        padding-left: 60px;
+        right: 50px;
+    }
+    nav:hover ul li a{
+        color: gray;
+
+    }
+    nav:hover ul li a:hover{
+        color: #b92c28;
+        text-decoration:none;
+    }
+
+}
+
+@media (min-width: 781px){
+    nav > span{
+        display: none;
+    }
+}
+#custom_card:hover{
+    background:rgba(0,0,0,0.1);
+}
+#custom_color > li > a{
+    color:#b92c28;
+    padding: 30px;
+    width: 150px;
+}
+#custom_color > li > a:hover{
+    border: none;
+    color: white;
+    border-bottom: 2px solid #b92c28;
+    background-color: #b92c28;
+    padding: 30px;
+    width: 150px;
+}
+#custom_color > .active > a{
+    border: none;
+    background-color: #b92c28;
+    color: white;
+}
+
